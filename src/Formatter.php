@@ -244,7 +244,7 @@ final class Formatter {
 		$result = '';
 
 		for ($i = 0, $bytes = \strlen($string); $i < $bytes; ++$i) {
-			$ord = \ord($string{$i});
+			$ord = \ord($string[$i]);
 
 			if (0 <= $ord && $ord <= 31) {
 				$result .= $cc($ord);
