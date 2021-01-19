@@ -253,7 +253,7 @@ final class Formatter {
 				$result .= $del;
 			}
 			else {
-				$result .= $string{$i};
+				$result .= $string[$i];
 			}
 		}
 
